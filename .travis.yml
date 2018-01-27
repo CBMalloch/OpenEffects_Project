@@ -1,0 +1,163 @@
+    language: c
+    sudo: false
+     
+    # Blacklist
+    branches:
+      except:
+        - gh-pages
+     
+    env:
+      global:
+         - PRETTYNAME="cbm OpenEffects Project Firmware"
+    # Optional, will default to "$TRAVIS_BUILD_DIR/Doxyfile"
+    #    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
+     
+    before_install:
+       - source <(curl -SLs https://raw.githubusercontent.com/CBMalloch/travis-ci-arduino/master/install.sh)
+     
+    # install:
+    #    - arduino --install-library "Adafruit ILI9341","Adafruit GFX Library"
+     
+    script:
+       - build_main_platforms
+     
+    # Generate and deploy documentation
+    after_success:
+      - source <(curl -SLs  https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/library_check.sh)
+      - source <(curl -SLs  https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/doxy_gen_and_deploy.sh)
+
+And here's what it all means:
+
+language: c This part is easy, we're going to be compiling C / C++ code.
+sudo: false means We don't need root on the container (if you don't need it, don't use it!)
+Download file
+Copy Code
+
+    # Blacklist
+    branches:
+      except:
+    - gh-pages
+
+This means we will not perform the full compile/documentation step on when we push to the gh-pages branch. This is so we don't accidentally trigger Travis to run twice after we push the documentation
+Download file
+Copy Code
+
+    env:
+      global:
+    - PRETTYNAME="Adafruit FT6206 Arduino Library"
+
+This is the 'nice pretty' name of the library, which will be displayed at the header of the documentation. You must change this to avoid confusion!
+Download file
+Copy Code
+
+            before_install:
+    - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+      
+      
+
+This step will install Arduino on your virtual computer and set up the board types as well, such as Uno, ESP8266, Zero, Due, etc! It's just a shell script so you can check it out at the URL to see what its' doing
+Download file
+Copy Code
+
+    install:
+    - arduino --install-library "Adafruit ILI9341","Adafruit GFX Library"
+
+This line adds more configuration setup. The text after the - is literally a bash shell command. We're calling the Arduino binary on the command line and instructing it to do stuff like install some libraries. If you do not need to install any libraries or any other configuration steps, just remove these two lines.
+Download file
+Copy Code
+
+    script:
+    - build_main_platforms
+
+This calls a function we created in the before_install step, when we ran that shell script from adafruit/travis-ci-arduino
+
+We have a few different functions, but this one will build for the main platforms we aim to support: Arduino UNO (ATmega328P), Leonardo (ATmega32u4), Zero (ATSAMD21), Due (ATSAMX), and ESP8266
+Download file
+Copy Code
+
+    # Generate and deploy documentation
+    after_success:
+      - source <(curl -SLs  https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/library_check.sh)
+    - source <(curl -SLs  https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/doxy_gen_and_deploy.sh)
+
+Lastly we have two more scripts we run. library_check.sh, at this time, is an empty hook but we hope to add some things like checking format of the library and looking for missing or misformatted lines.  You can remove this.
+
+doxy_gen_and_deploy.sh Is the script that will do the doxygen generation and then push the pages to your gh-pages branch
+Don't forget you'll need that empty gh-page branch if you want to have the doxygen pages pushed for you, see earlier in the guide!
+Add travis.yml To Library
+
+OK now you are ready! Grab our example travis.yml file from https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/example_travis.yml, rename it .travis.yml and place in your library repository.
+maker_business_extrav.png
+
+Edit it as we explain above, in particular edit the PRETTYNAME variable and change the extra-library-installation line as necessary!
+maker_business_edittrav.png
+
+Save, commit and push the new .travis.yml file to your master branch
+Checking Status
+
+You can now check out the status of your build by visiting http://travis-ci.org
+
+If you have multiple repositories, they'll appear on the left hand side. Yellow means working, green means pass and red means fail.
+maker_business_building.png
+Failure/Passes
+
+After every commit you may get an email or notification that Travis failed, or if it succeeded after failing you can get one too
+maker_business_fail.png
+
+Lets go and check out in the build log avialable at https://travis-ci.org/yourgithubaccount/repositoryname
+
+In this case, you can see we failed to compile the sensorapi.ino demo when running the zero test (SAMD21) due to an #include "avr/delay.h" now we know we need to either #ifdef it out or restructure our code.
+maker_business_error.png
+
+Travis builds take 5 minutes or so, so you're best off doing fast iterative tests locally. After you've fixed the bug and tested it locally, commit and push!
+
+This time, with any luck, you'll pass the main compilation tests!
+maker_business_build-main.png
+
+However your CI will probably still fail because we cannot 'push' the documentation to gh-pages so the last thing we have to do is give Travis CI permission to push to our repository
+Adding Write Permissions
+
+Log in to GitHub again and visit https://github.com/settings/tokens
+
+Click on Generate New Token
+maker_business_gentken.png
+
+You'll need to set up the scope for this token, give it a nice name (you can have one token per repository or one token for all your repos)
+
+And, if it's a public repo, click public_repo (otherwise you'll need to click all of repo for the access)
+maker_business_public_repo.png
+
+Now click Generate Token to get your key, which will be a bunch of numbers and letters. Keep this token safe! It's the same as your GitHub login!
+maker_business_token.png
+
+Back in your Travis CI page, go to the Settings for your repository
+maker_business_settings.png
+
+Scroll down to the Environment Variables section and create a new variable called GH_REPO_TOKEN then paste in the generated token in the box
+maker_business_token.png
+Make sure that "Display value in build log" is OFF!!!
+
+Save it, your token is now stored safely and securely
+maker_business_hidden.png
+Final Run and Check!
+
+Now you can re-trigger a Travis build from the menu
+maker_business_trigger.png
+
+This time, success!
+maker_business_fixed.png
+maker_business_success.png
+
+And if you look at your GitHub activity history you will see that 'you' pushed the code documentation in a Travis build
+maker_business_pushed.png
+
+And at github.io you'll see your newly updated documentation!
+maker_business_githubio.png
+
+And in the main repo, our Travis tag says its passing! Congrats, its a little tough the first time to do all these steps but once you get the hang of it, you'll be glad you did it later
+maker_business_pasin.png
+Arduino - Skill badge, iron-on patch
+$3.95
+Micro-controllers - Skill badge, iron-on patch
+$3.95
+Add All To Cart

@@ -1,2 +1,4 @@
-Doxyfile
+Doxyfile*
 doxygen.config
+doxygen_sqlite3.db
+html
