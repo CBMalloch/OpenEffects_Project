@@ -1,0 +1,28 @@
+<map id="src/DisplayableModule.h" name="src/DisplayableModule.h">
+<area shape="rect" id="node2" href="$_bitcrusher_8h.html" title="src/Bitcrusher.h" alt="" coords="158,79,271,104"/>
+<area shape="rect" id="node7" href="$_chorus_8h.html" title="src/Chorus.h" alt="" coords="295,79,392,104"/>
+<area shape="rect" id="node9" href="$_d_c_8h.html" title="src/DC.h" alt="" coords="416,79,490,104"/>
+<area shape="rect" id="node11" href="$_delay_ext_8h.html" title="src/DelayExt.h" alt="" coords="514,79,621,104"/>
+<area shape="rect" id="node13" href="$_displayable_module_8cpp.html" title="src/DisplayableModule.cpp" alt="" coords="1472,79,1653,104"/>
+<area shape="rect" id="node14" href="$_filter_8h.html" title="src/Filter.h" alt="" coords="645,79,728,104"/>
+<area shape="rect" id="node16" href="$_flange_8h.html" title="src/Flange.h" alt="" coords="752,79,847,104"/>
+<area shape="rect" id="node18" href="$_mixer_8h.html" title="src/Mixer.h" alt="" coords="871,79,957,104"/>
+<area shape="rect" id="node20" href="$_mode0_8h.html" title="src/Mode0.h" alt="" coords="982,79,1076,104"/>
+<area shape="rect" id="node22" href="$_reverb_8h.html" title="src/Reverb.h" alt="" coords="1101,79,1197,104"/>
+<area shape="rect" id="node24" href="$_sine_8h.html" title="src/Sine.h" alt="" coords="1222,79,1303,104"/>
+<area shape="rect" id="node26" href="$_tonesweep_8h.html" title="src/Tonesweep.h" alt="" coords="1327,79,1448,104"/>
+<area shape="rect" id="node3" href="$_bitcrusher_8cpp.html" title="src/Bitcrusher.cpp" alt="" coords="5,152,133,177"/>
+<area shape="rect" id="node4" href="$_open_effects_box_8h.html" title="src/OpenEffectsBox.h" alt="" coords="669,152,819,177"/>
+<area shape="rect" id="node5" href="$general_open_effects_box__v4_8ino.html" title="Firmware for OnkartGromt Open Effects Project Hardware. " alt="" coords="541,225,741,264"/>
+<area shape="rect" id="node6" href="$_open_effects_box_8cpp.html" title="src/OpenEffectsBox.cpp" alt="" coords="764,232,928,257"/>
+<area shape="rect" id="node8" href="$_chorus_8cpp.html" title="src/Chorus.cpp" alt="" coords="156,152,267,177"/>
+<area shape="rect" id="node10" href="$_d_c_8cpp.html" title="src/DC.cpp" alt="" coords="291,152,378,177"/>
+<area shape="rect" id="node12" href="$_delay_ext_8cpp.html" title="src/DelayExt.cpp" alt="" coords="402,152,523,177"/>
+<area shape="rect" id="node15" href="$_filter_8cpp.html" title="src/Filter.cpp" alt="" coords="547,152,644,177"/>
+<area shape="rect" id="node17" href="$_flange_8cpp.html" title="src/Flange.cpp" alt="" coords="843,152,951,177"/>
+<area shape="rect" id="node19" href="$_mixer_8cpp.html" title="src/Mixer.cpp" alt="" coords="975,152,1075,177"/>
+<area shape="rect" id="node21" href="$_mode0_8cpp.html" title="src/Mode0.cpp" alt="" coords="1099,152,1207,177"/>
+<area shape="rect" id="node23" href="$_reverb_8cpp.html" title="src/Reverb.cpp" alt="" coords="1231,152,1342,177"/>
+<area shape="rect" id="node25" href="$_sine_8cpp.html" title="src/Sine.cpp" alt="" coords="1366,152,1460,177"/>
+<area shape="rect" id="node27" href="$_tonesweep_8cpp.html" title="src/Tonesweep.cpp" alt="" coords="1484,152,1619,177"/>
+</map>
