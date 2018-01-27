@@ -1,0 +1,3 @@
+OpenEffectsBox	KEYWORD1
+reset	KEYWORD2
+setCallback	KEYWORD2

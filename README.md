@@ -1,2 +1,1 @@
-# OpenEffects_Project
-Firmware for audio effects boxes using the OpenEffects Project, Teensy, and the Teensy Audio Design Tool
+[![Build Status](https://travis-ci.org/CBMalloch/OpenEffects_Project.svg?branch=master)](https://travis-ci.org/CBMalloch/OpenEffects_Project)
