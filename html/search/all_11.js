@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['update',['update',['../class_bat_switch.html#ac22ba354f82cc1c0e2e8d6876305ea66',1,'BatSwitch::update()'],['../class_foot_switch.html#a3bda23682bf3dc91fefa3efa98e9cd1f',1,'FootSwitch::update()'],['../class_pedal.html#aa696e50f79dc3723a9b434f9895a8e81',1,'Pedal::update()'],['../class_potentiometer.html#a56e36ed55abee08cbe81ce01687f82ad',1,'Potentiometer::update()']]],
-  ['utility',['Utility',['../class_utility.html',1,'Utility'],['../class_utility.html#ac7af3e1642ac8d53ef180180a08fbd00',1,'Utility::Utility()']]],
-  ['utility_2ecpp',['Utility.cpp',['../_utility_8cpp.html',1,'']]],
-  ['utility_2eh',['Utility.h',['../_utility_8h.html',1,'']]],
-  ['utility_5fverbose_5fdefault',['Utility_VERBOSE_DEFAULT',['../_utility_8h.html#a94dfe8026a8b063e1f11d8ac05d4a7e3',1,'Utility.h']]],
-  ['utility_5fversion',['Utility_VERSION',['../_utility_8h.html#a2e9c2cabd53c7b61c99604e18b053597',1,'Utility.h']]]
+  ['tickle',['tickle',['../class_open_effects_box.html#a5ce71cb124645f49096492bc37cc0603',1,'OpenEffectsBox::tickle()'],['../class_open_effects_box_h_w.html#a4623ed8f605ab7d6a4abedf6879f06ac',1,'OpenEffectsBoxHW::tickle()'],['../class_tonesweep.html#a7b07248587a39ca50a852c38912512ec',1,'Tonesweep::tickle()']]],
+  ['tonesweep',['Tonesweep',['../class_tonesweep.html',1,'Tonesweep'],['../class_tonesweep.html#a72bce7be13a86848579bf58e8dc28dee',1,'Tonesweep::Tonesweep()']]],
+  ['tonesweep_2ecpp',['Tonesweep.cpp',['../_tonesweep_8cpp.html',1,'']]],
+  ['tonesweep_2eh',['Tonesweep.h',['../_tonesweep_8h.html',1,'']]],
+  ['tonesweep1',['tonesweep1',['../_open_effects_box_8cpp.html#ae0228519b8bd5aa1e9c7a07b3a3ca525',1,'OpenEffectsBox.cpp']]],
+  ['tonesweep2',['tonesweep2',['../_open_effects_box_8cpp.html#aa361224599efc06b7633b429a03ef625',1,'OpenEffectsBox.cpp']]],
+  ['tonesweep_5fverbose_5fdefault',['Tonesweep_VERBOSE_DEFAULT',['../_tonesweep_8h.html#aea3aceb167682523467a7c0df63856ae',1,'Tonesweep.h']]],
+  ['tonesweep_5fversion',['Tonesweep_VERSION',['../_tonesweep_8h.html#ac33431658e72c341ef6f704779cb8c4c',1,'Tonesweep.h']]]
 ];

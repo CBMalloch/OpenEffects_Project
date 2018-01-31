@@ -114,11 +114,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a88c44aecdfce24a5dd0e719b94267dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7307a8f883fb934f0440b2b4dc47b823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potentiometer.html#a7307a8f883fb934f0440b2b4dc47b823">clearState</a> ()</td></tr>
 <tr class="separator:a7307a8f883fb934f0440b2b4dc47b823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59318806724a62f4f15144b4eca0b428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_potentiometer.html#a59318806724a62f4f15144b4eca0b428">jump</a> ()</td></tr>
+<tr class="separator:a59318806724a62f4f15144b4eca0b428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper for hardware interface -Potentiometer-. </p>
 <h2>Handling of potentiometers</h2>
-<p>Since this design overloads the potentiometers ( for each settings mode, a given potentiometer controls some aspect of a different effect module ), I had to think long and hard about what should happen when a new mode is selected, since the pot can't move to reflect the ( different ) setting of the ( different ) parameter of the ( different ) effect module. I chose to ignore each pot until it is moved, at which time the related effect module setting will ( unfortunately ) jump to the current pot setting. *(Note to Paul - consider offering a rotary-encoder option here...)* This brings up a <em>different</em> gotcha. Reading a voltage several times will often yield different values. This will cause the pot value to be perceived as changed. Rats. So I had to add a guard band around the current setting, considering any reading within the guard band to be unchanged. I also added an <a href="https://en.wikipedia.org/wiki/Moving_average">EWMA smoothing algorithm</a> to minimize the required size of the guard band. The larger the guard band, the more one has to move the pot in order for the change to be noticed. The longer the averaging period, the more sluggishly the reaction to a change occurs and settles. I had to split the difference. </p>
+<p>Since this design overloads the potentiometers ( for each settings mode, a given potentiometer controls some aspect of a different effect module ), I had to think long and hard about what should happen when a new mode is selected, since the pot can't move to reflect the ( different ) setting of the ( different ) parameter of the ( different ) effect module. I chose to ignore each pot until it is moved, at which time the related effect module setting will ( unfortunately ) jump to the current pot setting. *(Note to Paul - consider offering a rotary-encoder option here...)* This brings up a <em>different</em> gotcha. Reading a voltage several times will often yield different values. This will cause the pot value to be perceived as changed. Rats. So I had to add a guard band around the current setting, considering any reading within the guard band to be unchanged. I also added an <a href="https://en.wikipedia.org/wiki/Moving_average">EWMA smoothing algorithm</a> to minimize the required size of the guard band. The larger the guard band, the more one has to move the pot in order for the change to be noticed. The longer the averaging period, the more sluggishly the reaction to a change occurs and settles. I had to split the difference. I have just added a method: jump. When this is called, it short-circuits the EWMA smoothing of the potentiometer's value towards the pot knob position. It is intended that this method be called when the display is about to be changed - i.e. the pots are about to be attached to a new parameter. This need is because a pot change just before a mode change leaves the value changing and so indicates an unintended change to the new mode. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a266317bbba4856942985925d044b969a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a266317bbba4856942985925d044b969a">&#9670;&nbsp;</a></span>Potentiometer()</h2>
@@ -158,7 +160,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_potentiometer_a518a49f1d9d85ae9bfea32fe6caff3e7_icgraph.png" border="0" usemap="#class_potentiometer_a518a49f1d9d85ae9bfea32fe6caff3e7_icgraph" alt=""/></div>
 <map name="class_potentiometer_a518a49f1d9d85ae9bfea32fe6caff3e7_icgraph" id="class_potentiometer_a518a49f1d9d85ae9bfea32fe6caff3e7_icgraph">
 <area shape="rect" id="node2" href="class_open_effects_box.html#a5ce71cb124645f49096492bc37cc0603" title="OpenEffectsBox::tickle" alt="" coords="216,5,371,31"/>
-<area shape="rect" id="node3" href="general_open_effects_box__v4_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="419,5,466,31"/>
 </map>
 </div>
 
@@ -201,7 +202,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_potentiometer_a88c44aecdfce24a5dd0e719b94267dc6_icgraph.png" border="0" usemap="#class_potentiometer_a88c44aecdfce24a5dd0e719b94267dc6_icgraph" alt=""/></div>
 <map name="class_potentiometer_a88c44aecdfce24a5dd0e719b94267dc6_icgraph" id="class_potentiometer_a88c44aecdfce24a5dd0e719b94267dc6_icgraph">
 <area shape="rect" id="node2" href="class_open_effects_box.html#a5ce71cb124645f49096492bc37cc0603" title="OpenEffectsBox::tickle" alt="" coords="217,5,372,31"/>
-<area shape="rect" id="node3" href="general_open_effects_box__v4_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="420,5,467,31"/>
 </map>
 </div>
 
@@ -245,9 +245,25 @@ Here is the caller graph for this function:</div>
 <map name="class_potentiometer_ab1c2e1513f98952487482eb48406f1bb_icgraph" id="class_potentiometer_ab1c2e1513f98952487482eb48406f1bb_icgraph">
 <area shape="rect" id="node2" href="class_open_effects_box_h_w.html#ac070397f7c596522c83c7ff1d540e2df" title="OpenEffectsBoxHW::init" alt="" coords="182,5,346,31"/>
 <area shape="rect" id="node3" href="class_open_effects_box.html#aea127362d5b00701ced70f20f728b60f" title="OpenEffectsBox::init" alt="" coords="394,5,536,31"/>
-<area shape="rect" id="node4" href="general_open_effects_box__v4_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="584,5,638,31"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a59318806724a62f4f15144b4eca0b428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59318806724a62f4f15144b4eca0b428">&#9670;&nbsp;</a></span>jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Potentiometer::jump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

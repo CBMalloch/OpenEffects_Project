@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['pedal_2ecpp',['Pedal.cpp',['../_pedal_8cpp.html',1,'']]],
-  ['pedal_2eh',['Pedal.h',['../_pedal_8h.html',1,'']]],
-  ['potentiometer_2ecpp',['Potentiometer.cpp',['../_potentiometer_8cpp.html',1,'']]],
-  ['potentiometer_2eh',['Potentiometer.h',['../_potentiometer_8h.html',1,'']]]
+  ['relay_2ecpp',['Relay.cpp',['../_relay_8cpp.html',1,'']]],
+  ['relay_2eh',['Relay.h',['../_relay_8h.html',1,'']]],
+  ['reverb_2ecpp',['Reverb.cpp',['../_reverb_8cpp.html',1,'']]],
+  ['reverb_2eh',['Reverb.h',['../_reverb_8h.html',1,'']]]
 ];

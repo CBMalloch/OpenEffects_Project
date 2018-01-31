@@ -20,6 +20,6 @@ var searchData=
   ['_5foled_5fverbose_5fdefault',['_Oled_VERBOSE_DEFAULT',['../_oled_8h.html#a709eafcdb5f29b4e09e40afd3797bf1f',1,'Oled.h']]],
   ['_5fpedal_5fverbose_5fdefault',['_Pedal_VERBOSE_DEFAULT',['../_pedal_8h.html#aef931352995575197c1519d764ea7ef6',1,'Pedal.h']]],
   ['_5fpotentiometer_5fverbose_5fdefault',['_Potentiometer_VERBOSE_DEFAULT',['../_potentiometer_8h.html#ada534779e17a276eadfea81c53d6bd03',1,'Potentiometer.h']]],
-  ['_5fverbose',['_verbose',['../class_displayable_module.html#a1688c41afaaae55f3c9597ee263904d0',1,'DisplayableModule']]],
+  ['_5fverbose',['_verbose',['../class_displayable_module.html#a2ada7b9cae93d6c121dba0e095318e97',1,'DisplayableModule']]],
   ['_5fversionstrlen',['_versionStrLen',['../_mode0_8h.html#af4733a1448f9485ae76a9660b462a374',1,'Mode0.h']]]
 ];

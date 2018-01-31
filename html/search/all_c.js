@@ -1,19 +1,12 @@
 var searchData=
 [
-  ['oeb',['oeb',['../general_open_effects_box__v4_8ino.html#adce890e5fa7a55c1ce4cd2e3da12afa8',1,'generalOpenEffectsBox_v4.ino']]],
-  ['oled',['Oled',['../class_oled.html',1,'Oled'],['../class_open_effects_box_h_w.html#a567084cd766ac8fa8966e6b8f749f210',1,'OpenEffectsBoxHW::oled()'],['../class_oled.html#a32b8b208af4d53455ff88c519eff75da',1,'Oled::Oled()']]],
-  ['oled_2ecpp',['Oled.cpp',['../_oled_8cpp.html',1,'']]],
-  ['oled_2eh',['Oled.h',['../_oled_8h.html',1,'']]],
-  ['oled_5fversion',['Oled_VERSION',['../_oled_8h.html#a2ec15bde02990638a3d349630e2c5855',1,'Oled.h']]],
-  ['openeffectsbox',['OpenEffectsBox',['../class_open_effects_box.html',1,'OpenEffectsBox'],['../class_open_effects_box.html#a20aa735d1c8ea776c6ec21087fc2d23a',1,'OpenEffectsBox::OpenEffectsBox()']]],
-  ['openeffectsbox_2ecpp',['OpenEffectsBox.cpp',['../_open_effects_box_8cpp.html',1,'']]],
-  ['openeffectsbox_2eh',['OpenEffectsBox.h',['../_open_effects_box_8h.html',1,'']]],
-  ['openeffectsbox_5fnmodes',['OpenEffectsBox_NMODES',['../_open_effects_box_8h.html#a032cd0d08597e21c3d40a97b0fdc3bfa',1,'OpenEffectsBox.h']]],
-  ['openeffectsbox_5fverbose_5fdefault',['OpenEffectsBox_VERBOSE_DEFAULT',['../_open_effects_box_8h.html#aa08a10c75cee6b15fc7197be8c849b48',1,'OpenEffectsBox.h']]],
-  ['openeffectsbox_5fversion',['OpenEffectsBox_VERSION',['../_open_effects_box_8h.html#a25210229a37e68d325b3e7b7cc5c822b',1,'OpenEffectsBox.h']]],
-  ['openeffectsboxhw',['OpenEffectsBoxHW',['../class_open_effects_box_h_w.html',1,'OpenEffectsBoxHW'],['../class_open_effects_box_h_w.html#a5cfe531f432bc672dd08b45568bb09ec',1,'OpenEffectsBoxHW::OpenEffectsBoxHW()']]],
-  ['openeffectsboxhw_2ecpp',['OpenEffectsBoxHW.cpp',['../_open_effects_box_h_w_8cpp.html',1,'']]],
-  ['openeffectsboxhw_2eh',['OpenEffectsBoxHW.h',['../_open_effects_box_h_w_8h.html',1,'']]],
-  ['openeffectsboxhw_5fverbose_5fdefault',['OpenEffectsBoxHW_VERBOSE_DEFAULT',['../_open_effects_box_h_w_8h.html#ab5b85b536bb3e261f523db8c00ea9605',1,'OpenEffectsBoxHW.h']]],
-  ['openeffectsboxhw_5fversion',['OpenEffectsBoxHW_VERSION',['../_open_effects_box_h_w_8h.html#ab9f492e1d8e097753570d91172c14d28',1,'OpenEffectsBoxHW.h']]]
+  ['namestrlen',['nameStrLen',['../_displayable_module_8h.html#a24a04c2abf64a124761ed400e373354f',1,'DisplayableModule.h']]],
+  ['nbats',['nBats',['../_open_effects_box_h_w_8h.html#a36382b6deaaa10e505e0426701830964',1,'OpenEffectsBoxHW.h']]],
+  ['nneopixels',['nNeoPixels',['../_open_effects_box_h_w_8h.html#ae22d43e1fceffbf06fe0925e01f89ec0',1,'OpenEffectsBoxHW.h']]],
+  ['notify',['notify',['../class_bitcrusher.html#ae392ad4b140a5121df417ece060911f4',1,'Bitcrusher::notify()'],['../class_chorus.html#acb22e9cc93011859d1ae02b05a7388f5',1,'Chorus::notify()'],['../class_d_c.html#a45e51132fbd69668134f3ab13f3668b1',1,'DC::notify()'],['../class_delay_ext.html#a76001b2a3aad7ce1a2e1220ab7387be4',1,'DelayExt::notify()'],['../class_displayable_module.html#a8ae5383931f10c54cff2feef2bc07dee',1,'DisplayableModule::notify()'],['../class_filter.html#a9cdce58ac2fe0b8beb6d561ab3725041',1,'Filter::notify()'],['../class_flange.html#a10541758c108d92a73e96ed9f8f1377b',1,'Flange::notify()'],['../class_mixer.html#a73177ee1e071909ef23ff2e913eb6cbc',1,'Mixer::notify()'],['../class_mode0.html#a743ebe3d0faccc421d06c9114026a099',1,'Mode0::notify()'],['../class_reverb.html#a0a4818faef8203311b3c31eb9d59c277',1,'Reverb::notify()'],['../class_sine.html#a91e8327318758647ea3e0f856eb3eb60',1,'Sine::notify()'],['../class_tonesweep.html#a26d324fb0de4aac00a04e7e7e9e812c0',1,'Tonesweep::notify()']]],
+  ['npbs',['nPBs',['../_open_effects_box_h_w_8h.html#a66b2de1f056e3372214c3244690b509f',1,'OpenEffectsBoxHW.h']]],
+  ['npedals',['nPedals',['../_open_effects_box_h_w_8h.html#a4fea7d8a44c63d401b302fd9ce5964bf',1,'OpenEffectsBoxHW.h']]],
+  ['npots',['nPots',['../_open_effects_box_h_w_8h.html#a352d1681e96241516bf636a810bd26d9',1,'OpenEffectsBoxHW.h']]],
+  ['nrelays',['nRelays',['../_open_effects_box_h_w_8h.html#a6da04c873e299e44ccf5a2fe43f50ae1',1,'OpenEffectsBoxHW.h']]],
+  ['nvupixels',['nVUpixels',['../_open_effects_box_h_w_8h.html#aebd87e6fe95e110d4771bb672a6d42d1',1,'OpenEffectsBoxHW.h']]]
 ];

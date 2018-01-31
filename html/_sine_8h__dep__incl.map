@@ -1,6 +1,5 @@
 <map id="src/Sine.h" name="src/Sine.h">
-<area shape="rect" id="node2" href="$_open_effects_box_8h.html" title="src/OpenEffectsBox.h" alt="" coords="133,79,283,104"/>
-<area shape="rect" id="node5" href="$_sine_8cpp.html" title="src/Sine.cpp" alt="" coords="307,79,402,104"/>
-<area shape="rect" id="node3" href="$general_open_effects_box__v4_8ino.html" title="Firmware for OnkartGromt Open Effects Project Hardware. " alt="" coords="5,152,205,191"/>
-<area shape="rect" id="node4" href="$_open_effects_box_8cpp.html" title="src/OpenEffectsBox.cpp" alt="" coords="228,159,393,184"/>
+<area shape="rect" id="node2" href="$_open_effects_box_8h.html" title="src/OpenEffectsBox.h" alt="" coords="12,79,162,104"/>
+<area shape="rect" id="node4" href="$_sine_8cpp.html" title="src/Sine.cpp" alt="" coords="187,79,281,104"/>
+<area shape="rect" id="node3" href="$_open_effects_box_8cpp.html" title="src/OpenEffectsBox.cpp" alt="" coords="5,152,169,177"/>
 </map>

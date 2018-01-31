@@ -5,5 +5,6 @@ var class_potentiometer =
     [ "clearState", "class_potentiometer.html#a7307a8f883fb934f0440b2b4dc47b823", null ],
     [ "getValue", "class_potentiometer.html#a88c44aecdfce24a5dd0e719b94267dc6", null ],
     [ "init", "class_potentiometer.html#ab1c2e1513f98952487482eb48406f1bb", null ],
+    [ "jump", "class_potentiometer.html#a59318806724a62f4f15144b4eca0b428", null ],
     [ "update", "class_potentiometer.html#a56e36ed55abee08cbe81ce01687f82ad", null ]
 ];

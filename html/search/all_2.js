@@ -7,7 +7,6 @@ var searchData=
   ['batswitch_2ecpp',['BatSwitch.cpp',['../_bat_switch_8cpp.html',1,'']]],
   ['batswitch_2eh',['BatSwitch.h',['../_bat_switch_8h.html',1,'']]],
   ['batswitch_5fversion',['BatSwitch_VERSION',['../_bat_switch_8h.html#a39df91b70898638860c8fdc89f1bd177',1,'BatSwitch.h']]],
-  ['baudrate',['BAUDRATE',['../general_open_effects_box__v4_8ino.html#a734bbab06e1a9fd2e5522db0221ff6e3',1,'generalOpenEffectsBox_v4.ino']]],
   ['bitcrusher',['Bitcrusher',['../class_bitcrusher.html',1,'Bitcrusher'],['../class_bitcrusher.html#ad130a5c022020a6e64ed6dc75f8d2372',1,'Bitcrusher::Bitcrusher()']]],
   ['bitcrusher_2ecpp',['Bitcrusher.cpp',['../_bitcrusher_8cpp.html',1,'']]],
   ['bitcrusher_2eh',['Bitcrusher.h',['../_bitcrusher_8h.html',1,'']]],

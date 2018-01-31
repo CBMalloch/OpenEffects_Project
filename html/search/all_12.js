@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['verbose',['VERBOSE',['../_bat_switch_8cpp.html#a4a20323806e186f80a443d377d400e69',1,'VERBOSE():&#160;BatSwitch.cpp'],['../_foot_switch_8cpp.html#a4a20323806e186f80a443d377d400e69',1,'VERBOSE():&#160;FootSwitch.cpp'],['../_relay_8cpp.html#a4a20323806e186f80a443d377d400e69',1,'VERBOSE():&#160;Relay.cpp']]],
-  ['verdate',['VERDATE',['../general_open_effects_box__v4_8ino.html#a35c89e6edf9f55057ac7f4dc0e808fc3',1,'generalOpenEffectsBox_v4.ino']]],
-  ['version',['VERSION',['../general_open_effects_box__v4_8ino.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'generalOpenEffectsBox_v4.ino']]],
-  ['vufirstpixel',['VUfirstPixel',['../_open_effects_box_h_w_8h.html#a9029f8bbd940ad84d2a73158122fd026',1,'OpenEffectsBoxHW.h']]]
+  ['update',['update',['../class_bat_switch.html#ac22ba354f82cc1c0e2e8d6876305ea66',1,'BatSwitch::update()'],['../class_foot_switch.html#a3bda23682bf3dc91fefa3efa98e9cd1f',1,'FootSwitch::update()'],['../class_pedal.html#aa696e50f79dc3723a9b434f9895a8e81',1,'Pedal::update()'],['../class_potentiometer.html#a56e36ed55abee08cbe81ce01687f82ad',1,'Potentiometer::update()']]],
+  ['utility',['Utility',['../class_utility.html',1,'Utility'],['../class_utility.html#ac7af3e1642ac8d53ef180180a08fbd00',1,'Utility::Utility()']]],
+  ['utility_2ecpp',['Utility.cpp',['../_utility_8cpp.html',1,'']]],
+  ['utility_2eh',['Utility.h',['../_utility_8h.html',1,'']]],
+  ['utility_5fverbose_5fdefault',['Utility_VERBOSE_DEFAULT',['../_utility_8h.html#a94dfe8026a8b063e1f11d8ac05d4a7e3',1,'Utility.h']]],
+  ['utility_5fversion',['Utility_VERSION',['../_utility_8h.html#a2e9c2cabd53c7b61c99604e18b053597',1,'Utility.h']]]
 ];

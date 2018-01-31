@@ -1,3 +1,5 @@
 <map id="Mode0::setVolume" name="Mode0::setVolume">
-<area shape="rect" id="node2" href="$class_mode0.html#a743ebe3d0faccc421d06c9114026a099" title="Mode0::notify" alt="" coords="185,5,286,31"/>
+<area shape="rect" id="node2" href="$class_mode0.html#a21802f200c6e3792ca5f8daf91ce910c" title="Mode0::init" alt="" coords="193,5,279,31"/>
+<area shape="rect" id="node4" href="$class_mode0.html#a743ebe3d0faccc421d06c9114026a099" title="Mode0::notify" alt="" coords="185,55,286,80"/>
+<area shape="rect" id="node3" href="$class_open_effects_box.html#aea127362d5b00701ced70f20f728b60f" title="OpenEffectsBox::init" alt="" coords="334,5,476,31"/>
 </map>

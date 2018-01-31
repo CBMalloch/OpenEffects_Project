@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cbm generalOpenEffectsBox_v4: cbm generalOpenEffectsBox_v4</title>
+<title>cbm generalOpenEffectsBox_v4: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,36 +88,10 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">cbm generalOpenEffectsBox_v4 </div>  </div>
+<div class="title">cbm generalOpenEffectsBox_v4 Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
-Introduction</h1>
-<p>This is the documentation for Chuck Malloch's implementation of firmware for the <a href="http://openeffectsproject.com/">OnkartGromt OpenEffects Project hardware</a>.</p>
-<p>In order to make a generalized effects pedal ( a work very much in progress! ) I have used the <a href="https://www.pjrc.com/teensy/gui/?info=AudioEffectDelayExternal">Teensy Audio System Design Tool</a> to generate this general OpenEffects pedal audio design. </p><div class="image">
-<img src="../general OpenEffects pedal audio design small.jpg" alt="*" title="Chuck&apos;s OpenEffects pedal audio design"/>
-</div>
-<p> Then I exported that framework to the <a class="el" href="_open_effects_box_8cpp.html">OpenEffectsBox.cpp</a> module. That module is the supervisor/scheduler code that runs the box and gives it its character and capabilities. Everything else in the project is wrapper code. There are two varieties of wrapper, though:</p><ol type="1">
-<li>hardware wrapper: wraps an individual hardware component ( potentiometer, switch, button, LED strip, OLED screen, relay )</li>
-<li>audio effect module wrapper: wraps an individual component of the audio design and gives it its own display OLED screen to allow its parameters to be displayed and modified.</li>
-</ol>
-<p>I have tried very hard to use good software engineering methods to strongly decouple the individual classes within the code.</p>
-<h1><a class="anchor" id="dependencies"></a>
-Dependencies</h1>
-<p>This firmware is designed specifically to work with that hardware, but can be modified to apply to hardware that you might design to utilize the <a href="https://www.pjrc.com/">Teensy</a> <a href="https://www.pjrc.com/store/teensy3_audio.html">Audio Board</a>.</p>
-<h1><a class="anchor" id="author"></a>
-Author</h1>
-<p>Written by Charles B. Malloch, PhD, Department of Electrical and Computer Engineering, UMass Amherst. January 27, 2018</p>
-<h1><a class="anchor" id="license"></a>
-License</h1>
-<p>BSD license, all text here must be included in any redistribution.</p>
-<h1><a class="anchor" id="references"></a>
-References</h1>
-<p><a href="http://openeffectsproject.com/">The OpenEffects Project – the source of the open effects boxes</a> <a href="https://www.pjrc.com/">The boxes are powered by Teensy microcontrollers from Paul Stoffregen</a> … and use <a href="https://www.pjrc.com/store/teensy3_audio.html">the same chip found on the Teensy Audio Shield</a> <a href="https://www.pjrc.com/teensy/gui/">Paul Stoffregen's Audio Design Tool which generates the starting framework for Teensy audio effects</a></p>
-<h1><a class="anchor" id="acknowledgements"></a>
-Acknowledgements</h1>
-<p>Many thanks to <a href="http://onkartgromt.no/">Øyvind Mjanger</a>, who developed the OpenEffects Project hardware and to Paul Stoffregen, who developed the Teensy and especially its audio processing capabilities </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

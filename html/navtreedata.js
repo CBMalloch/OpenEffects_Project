@@ -24,12 +24,6 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "cbm generalOpenEffectsBox_v4", "index.html", [
-    [ "Introduction", "index.html#intro_sec", null ],
-    [ "Dependencies", "index.html#dependencies", null ],
-    [ "Author", "index.html#author", null ],
-    [ "License", "index.html#license", null ],
-    [ "References", "index.html#references", null ],
-    [ "Acknowledgements", "index.html#acknowledgements", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -55,7 +49,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_bat_switch_8cpp.html",
-"class_filter.html"
+"class_displayable_module.html#af26ba38e9f363b6c427c53871ecd6a82"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

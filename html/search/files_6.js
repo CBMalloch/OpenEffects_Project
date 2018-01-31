@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['oled_2ecpp',['Oled.cpp',['../_oled_8cpp.html',1,'']]],
-  ['oled_2eh',['Oled.h',['../_oled_8h.html',1,'']]],
-  ['openeffectsbox_2ecpp',['OpenEffectsBox.cpp',['../_open_effects_box_8cpp.html',1,'']]],
-  ['openeffectsbox_2eh',['OpenEffectsBox.h',['../_open_effects_box_8h.html',1,'']]],
-  ['openeffectsboxhw_2ecpp',['OpenEffectsBoxHW.cpp',['../_open_effects_box_h_w_8cpp.html',1,'']]],
-  ['openeffectsboxhw_2eh',['OpenEffectsBoxHW.h',['../_open_effects_box_h_w_8h.html',1,'']]]
+  ['pedal_2ecpp',['Pedal.cpp',['../_pedal_8cpp.html',1,'']]],
+  ['pedal_2eh',['Pedal.h',['../_pedal_8h.html',1,'']]],
+  ['potentiometer_2ecpp',['Potentiometer.cpp',['../_potentiometer_8cpp.html',1,'']]],
+  ['potentiometer_2eh',['Potentiometer.h',['../_potentiometer_8h.html',1,'']]]
 ];

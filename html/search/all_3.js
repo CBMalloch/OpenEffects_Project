@@ -7,6 +7,5 @@ var searchData=
   ['chorus1',['chorus1',['../_open_effects_box_8cpp.html#a2143e834dd8c43e21668011e86f42bc6',1,'OpenEffectsBox.cpp']]],
   ['chorus_5fverbose_5fdefault',['Chorus_VERBOSE_DEFAULT',['../_chorus_8h.html#ab3779d2226e8ab06fa78da0c6161597a',1,'Chorus.h']]],
   ['chorus_5fversion',['Chorus_VERSION',['../_chorus_8h.html#a8908b96ff075e41f853c109a133dc7a8',1,'Chorus.h']]],
-  ['clearstate',['clearState',['../class_bat_switch.html#af2180338890cebe52ff16427361383bd',1,'BatSwitch::clearState()'],['../class_foot_switch.html#a2971bbc4bbc9b14001c350d29f8f7ae9',1,'FootSwitch::clearState()'],['../class_pedal.html#a2d8c1db9ddf3d92b354d0f9937802bc6',1,'Pedal::clearState()'],['../class_potentiometer.html#a7307a8f883fb934f0440b2b4dc47b823',1,'Potentiometer::clearState()']]],
-  ['cbm_20generalopeneffectsbox_5fv4',['cbm generalOpenEffectsBox_v4',['../index.html',1,'']]]
+  ['clearstate',['clearState',['../class_bat_switch.html#af2180338890cebe52ff16427361383bd',1,'BatSwitch::clearState()'],['../class_foot_switch.html#a2971bbc4bbc9b14001c350d29f8f7ae9',1,'FootSwitch::clearState()'],['../class_pedal.html#a2d8c1db9ddf3d92b354d0f9937802bc6',1,'Pedal::clearState()'],['../class_potentiometer.html#a7307a8f883fb934f0440b2b4dc47b823',1,'Potentiometer::clearState()']]]
 ];

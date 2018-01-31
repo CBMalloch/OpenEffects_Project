@@ -1,6 +1,5 @@
 <map id="src/DC.h" name="src/DC.h">
-<area shape="rect" id="node2" href="$_d_c_8cpp.html" title="src/DC.cpp" alt="" coords="22,79,109,104"/>
-<area shape="rect" id="node3" href="$_open_effects_box_8h.html" title="src/OpenEffectsBox.h" alt="" coords="133,79,283,104"/>
-<area shape="rect" id="node4" href="$general_open_effects_box__v4_8ino.html" title="Firmware for OnkartGromt Open Effects Project Hardware. " alt="" coords="5,152,205,191"/>
-<area shape="rect" id="node5" href="$_open_effects_box_8cpp.html" title="src/OpenEffectsBox.cpp" alt="" coords="228,159,393,184"/>
+<area shape="rect" id="node2" href="$_d_c_8cpp.html" title="src/DC.cpp" alt="" coords="5,79,93,104"/>
+<area shape="rect" id="node3" href="$_open_effects_box_8h.html" title="src/OpenEffectsBox.h" alt="" coords="117,79,267,104"/>
+<area shape="rect" id="node4" href="$_open_effects_box_8cpp.html" title="src/OpenEffectsBox.cpp" alt="" coords="110,152,274,177"/>
 </map>

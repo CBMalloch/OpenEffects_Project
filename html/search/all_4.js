@@ -18,5 +18,6 @@ var searchData=
   ['displayablemodule_2eh',['DisplayableModule.h',['../_displayable_module_8h.html',1,'']]],
   ['displayablemodule_5fverbose_5fdefault',['DisplayableModule_VERBOSE_DEFAULT',['../_displayable_module_8h.html#a483eb167fdc6365824170a77f4900236',1,'DisplayableModule.h']]],
   ['displayablemodule_5fversion',['DisplayableModule_VERSION',['../_displayable_module_8h.html#a2ab632dce96ae12467d06e0763c0fd77',1,'DisplayableModule.h']]],
-  ['displaycommon',['displayCommon',['../class_oled.html#a466ecce521b09ac6470aae9836b2f806',1,'Oled']]]
+  ['displaycommon',['displayCommon',['../class_oled.html#a466ecce521b09ac6470aae9836b2f806',1,'Oled']]],
+  ['drum1',['drum1',['../_open_effects_box_8cpp.html#a5847cf9343a0e2a23d871bcd9f66dfbd',1,'OpenEffectsBox.cpp']]]
 ];
