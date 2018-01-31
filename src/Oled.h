@@ -45,7 +45,7 @@ class Oled : public Adafruit_SSD1306 {
     Oled ();  // constructor
     void setVerbose ( int verbose );
     
-    #define _Oled_VERBOSE_DEFAULT 12
+    #define _Oled_VERBOSE_DEFAULT  2
     void init ( int verbose = _Oled_VERBOSE_DEFAULT );
     
     void displayCommon ( int mode, int subMode );

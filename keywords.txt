@@ -1,3 +1,24 @@
-OpenEffectsBox	KEYWORD1
-reset	KEYWORD2
-setCallback	KEYWORD2
+#######################################
+# Syntax Coloring Map For ExampleLibrary
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+OpenEffectsBox	        KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+reset	                  KEYWORD2
+setCallback	            KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################

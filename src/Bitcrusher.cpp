@@ -25,8 +25,8 @@ void Bitcrusher::init ( int id, char *name, AudioEffectBitcrusher *bitcrusher, O
   
   _bitcrusher = bitcrusher;
   
-  _nBits = 16;
-  _sampleRate = 44100;
+  setNBits ( 16 );
+  setSampleRate ( 44100 );
   
   if ( _verbose >= 12 ) {
     Serial.print ( "Bitcrusher " );
@@ -40,7 +40,7 @@ void Bitcrusher::init ( int id, char *name, AudioEffectBitcrusher *bitcrusher, O
   if ( _verbose >= 12 ) {
     Serial.print ( "Bitcrusher " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 
@@ -73,7 +73,7 @@ void Bitcrusher::notify ( int channel, float value ) {
   switch ( channel ) {
     case 0:  // bits
       {
-        float nBits = round ( Utility::fmapc ( value, 0.0, 1.0, 16.2, 6.0 ) );
+        float nBits = round ( Utility::fmapc ( value, 0.0, 1.0, 16.2, 4.0 ) );
         setNBits ( round ( nBits ) );
       };
       break;

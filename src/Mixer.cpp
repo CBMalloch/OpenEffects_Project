@@ -48,7 +48,7 @@ void Mixer::init ( int id, char *name, AudioMixer4 *mixer, OpenEffectsBoxHW *oeb
   if ( _verbose >= 12 ) {
     Serial.print ( "Mixer " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

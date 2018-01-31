@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define Bitcrusher_VERBOSE_DEFAULT 12
+#define Bitcrusher_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -Bitcrusher-.
 

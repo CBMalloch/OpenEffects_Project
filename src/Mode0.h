@@ -18,7 +18,7 @@
 
 #include <DisplayableModule.h>
 
-#define Mode0_VERBOSE_DEFAULT 12
+#define Mode0_VERBOSE_DEFAULT  112
     
 /*! \brief Class to instantiate the mode-0 screen.
 
@@ -31,7 +31,7 @@ class Mode0 : public DisplayableModule {
 
   public:
     Mode0 ();  // constructor
-    void setVerbose ( int verbose );
+    // void setVerbose ( int verbose );
     
     void init ( OpenEffectsBoxHW *oebhw, char * version, float *outputVolume, int verbose = Mode0_VERBOSE_DEFAULT );
     void notify ( int channel, float value );

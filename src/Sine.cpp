@@ -25,15 +25,15 @@ void Sine::init ( int id, char *name, AudioSynthWaveformSine *sine, OpenEffectsB
   DisplayableModule::init ( id, name, oebhw, verbose );
   
   _sine = sine;
-  _frequency = 440.0;
   
+  _frequency = 440.0;
   setFrequency ( _frequency );
   _sine->amplitude ( 0.2 );
   
   if ( _verbose >= 12 ) {
     Serial.print ( "Sine " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

@@ -35,7 +35,7 @@ class Pedal {
     
     void setVerbose ( int i );
     
-    #define _Pedal_VERBOSE_DEFAULT 12
+    #define _Pedal_VERBOSE_DEFAULT  2
     
     Pedal ();  // constructor
     void init ( int id, int pin, int verbose = _Pedal_VERBOSE_DEFAULT );

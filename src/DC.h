@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define DC_VERBOSE_DEFAULT 12
+#define DC_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -DC-.
 

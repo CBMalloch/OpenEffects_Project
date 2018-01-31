@@ -33,7 +33,7 @@ void Chorus::init ( int id, char *name, AudioEffectChorus *chorus, OpenEffectsBo
   if ( _verbose >= 12 ) {
     Serial.print ( "Chorus " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define Sine_VERBOSE_DEFAULT 12
+#define Sine_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -Sine-.
 

@@ -30,12 +30,13 @@ void Reverb::init ( int id, char *name, AudioEffectReverb *reverb, OpenEffectsBo
   if ( _verbose >= 12 ) {
     Serial.print ( "Reverb " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 
 void Reverb::setReverbTime ( float reverbTime_s ) {
-  _reverbTime_s = reverbTime_s;
+  // HACK! reverb time of 0 is ignored!
+  _reverbTime_s = reverbTime_s + 1e-6;
   if ( _verbose >= 12 ) {
     Serial.print ( "Reverb " );
     Serial.print ( _id );
@@ -43,6 +44,7 @@ void Reverb::setReverbTime ( float reverbTime_s ) {
     Serial.print ( _reverbTime_s ); 
     Serial.print ( "\n" );\
   }
+  _reverb->reverbTime ( _reverbTime_s );
   _displayIsStale = true;
 }
 

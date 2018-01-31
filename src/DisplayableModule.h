@@ -29,7 +29,7 @@
 #include <OpenEffectsBoxHW.h>
 #include <Utility.h>
 
-#define DisplayableModule_VERBOSE_DEFAULT 12
+#define DisplayableModule_VERBOSE_DEFAULT  2
 
 /*! \brief Base class for any class using the OLED display.
 
@@ -53,13 +53,15 @@ class DisplayableModule {
     #define _DisplayableModule_VERBOSE_DEFAULT 2
     
     virtual void notify ( int channel, float value );
-    virtual void display ( int mode, int subMode, bool force = false ); 
+    virtual void display ( int mode, int subMode, bool force = false );
+    
+    void identify ();
   
   protected:
   
-    int _verbose;
+    volatile int _verbose;
     int _id;
-    #define nameStrLen 8
+    #define nameStrLen 16
     char _name [ nameStrLen ];
     OpenEffectsBoxHW *_oebhw;
     

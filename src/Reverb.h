@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define Reverb_VERBOSE_DEFAULT 12
+#define Reverb_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -Reverb-.
 

@@ -75,7 +75,12 @@ void Potentiometer::update () {
     _changed = true;
     _changeReported = true;
   }
+}
 
+void Potentiometer::jump () {
+  _value = read();
+  _oldValue = _value;
+  _changeReported = true;
 }
 
 bool Potentiometer::changed () {

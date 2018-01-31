@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define Filter_VERBOSE_DEFAULT 12
+#define Filter_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -Filter-.
 

@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define DelayExt_VERBOSE_DEFAULT 12
+#define DelayExt_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -Reverb-.
 

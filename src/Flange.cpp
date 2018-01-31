@@ -37,7 +37,7 @@ void Flange::init ( int id, char *name, AudioEffectFlange *flange, OpenEffectsBo
   if ( _verbose >= 12 ) {
     Serial.print ( "Flange " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

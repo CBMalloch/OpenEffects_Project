@@ -19,15 +19,15 @@ Mode0::Mode0 () {
 
 void Mode0::init ( OpenEffectsBoxHW *oebhw, char * version, float *outputVolume, int verbose ) {
                    
-                   
-  DisplayableModule::init ( 0, (char *) "nobody_home", oebhw, verbose );
+  DisplayableModule::init ( 0, (char *) "Mode0", oebhw, verbose );
   
   _volume = outputVolume;
+  setVolume ( * _volume );
   
   if ( _verbose >= 12 ) {
     Serial.print ( "Mode0 " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
   
   strncpy ( _version, version, _versionStrLen );
@@ -67,10 +67,10 @@ void Mode0::display ( int mode, int subMode, bool force ) {
   _oebhw->oled.displayCommon ( mode, subMode );
   
   if ( _verbose >= 12 ) {
-    Serial.println ( "Mode0 " );
+    Serial.println ( "Mode0 display" );
   }
 
-  _oebhw->oled.setTextSize ( 2 );
+  _oebhw->oled.setTextSize ( 1 );
   _oebhw->oled.setCursor ( 0, 28 );
   _oebhw->oled.print ( "Vol" );
   

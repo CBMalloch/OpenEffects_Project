@@ -36,7 +36,7 @@ void Tonesweep::init ( int id,
   if ( _verbose >= 12 ) {
     Serial.print ( "Tonesweep " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 
@@ -49,6 +49,8 @@ void Tonesweep::setLFrequency ( float frequency ) {
     Serial.print ( _lFrequency ); 
     Serial.print ( "\n" );\
   }
+  // value gets used by tickle, when sweep is restarted
+  _displayIsStale = true;
 }
   
 void Tonesweep::setHFrequency ( float frequency ) {
@@ -60,6 +62,8 @@ void Tonesweep::setHFrequency ( float frequency ) {
     Serial.print ( _hFrequency ); 
     Serial.print ( "\n" );\
   }
+  // value gets used by tickle, when sweep is restarted
+  _displayIsStale = true;
 }
   
 void Tonesweep::setSweepTime ( float sweep_time ) {
@@ -71,6 +75,8 @@ void Tonesweep::setSweepTime ( float sweep_time ) {
     Serial.print ( _sweepTime ); 
     Serial.print ( "\n" );\
   }
+  // value gets used by tickle, when sweep is restarted
+  _displayIsStale = true;
 }
 
 void Tonesweep::notify ( int channel, float value ) {

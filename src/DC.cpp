@@ -25,13 +25,13 @@ void DC::init ( int id, char *name, AudioSynthWaveformDc *dc, OpenEffectsBoxHW *
   DisplayableModule::init ( id, name, oebhw, verbose );
   
   _dc = dc;
-  
+  _level = 0.2;
   setLevel ( _level );
   
   if ( _verbose >= 12 ) {
     Serial.print ( "DC " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

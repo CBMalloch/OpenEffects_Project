@@ -38,7 +38,7 @@
 
 #define OpenEffectsBoxHW_VERSION "0.000.005"
 
-#define OpenEffectsBoxHW_VERBOSE_DEFAULT 12
+#define OpenEffectsBoxHW_VERBOSE_DEFAULT  2
 
 /* ------------------------------------------------------------------------ //
                               pin assignments                       

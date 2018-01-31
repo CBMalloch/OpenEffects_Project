@@ -33,7 +33,7 @@ void Filter::init ( int id, char *name, AudioFilterStateVariable *filter, OpenEf
   if ( _verbose >= 12 ) {
     Serial.print ( "Filter " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

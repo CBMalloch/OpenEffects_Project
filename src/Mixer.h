@@ -20,7 +20,7 @@
 
 #include <DisplayableModule.h>
 
-#define Mixer_VERBOSE_DEFAULT 12
+#define Mixer_VERBOSE_DEFAULT  2
     
 /*! \brief Wrapper for Audio Design Tool -Filter-.
 

@@ -16,7 +16,7 @@
 
 #include <OpenEffectsBoxHW.h>
 
-#define OpenEffectsBox_VERSION "4.000.007"
+#define OpenEffectsBox_VERSION "4.000.008"
 
 #include <Arduino.h>
 #include <Print.h>
@@ -39,7 +39,7 @@
 #include <Reverb.h>
 #include <DelayExt.h>
 
-#define OpenEffectsBox_VERBOSE_DEFAULT 12
+#define OpenEffectsBox_VERBOSE_DEFAULT  2
 #define OpenEffectsBox_NMODES 11
     
 /*!

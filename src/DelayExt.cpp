@@ -53,7 +53,7 @@ void DelayExt::init ( int id, char *name, AudioEffectDelayExternal *delayExt, Op
   if ( _verbose >= 12 ) {
     Serial.print ( "DelayExt " );
     Serial.print ( _id );
-    Serial.println ( " initalized" );
+    Serial.println ( " initialized" );
   }
 }
 

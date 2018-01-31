@@ -41,6 +41,12 @@
   order for the change to be noticed. The longer the averaging period, the more 
   sluggishly the reaction to a change occurs and settles. I had to split the 
   difference.
+  I have just added a method: jump. When this is called, it short-circuits the 
+  EWMA smoothing of the potentiometer's value towards the pot knob position.
+  It is intended that this method be called when the display is about to be 
+  changed - i.e. the pots are about to be attached to a new parameter. This need 
+  is because a pot change just before a mode change leaves the value changing and
+  so indicates an unintended change to the new mode.
   
 */
 
@@ -57,6 +63,7 @@ class Potentiometer {
     bool changed ();
     float getValue ();
     void clearState ();
+    void jump ();
 
 
   protected:

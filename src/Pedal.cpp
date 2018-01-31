@@ -24,6 +24,9 @@ float Pedal::read () {
     delay ( 1 );
   }
   value /= float ( nReadRepetitions );
+  
+  // an unplugged pedal should give a value of 0
+  if ( value < 12 ) return ( -1.0 );
   return ( Utility::fmapc ( value, 12, 172, 0.0, 1.0 ) );
 }
 
